@@ -2,20 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: #333333;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: #F2F2F6;
+}
+
+.container_padding {
+    @apply mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-20 2xl:mx-24
+}
+
+#getStartedButton, .calculator {
+    box-shadow: 5px 5px 5px #CFCFD2;
+}
+
+.calculator_button {
+    @apply p-5 rounded-md hover:bg-opacity-70 active:bg-opacity-100
+}
+
+.input_field {
+    @apply text-right px-2 bg-white
 }
