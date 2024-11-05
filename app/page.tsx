@@ -1,6 +1,5 @@
 import BasicCalculator from "@/components/BasicCalculator";
 import CustomButton from "@/components/CustomButton";
-import Image from "next/image";
 
 export default function Home() {
   return (
