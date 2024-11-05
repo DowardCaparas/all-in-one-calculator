@@ -17,7 +17,7 @@ const BasicCalculator = () => {
   };
 
   const handleOperatorClick = (operator: string) => {
-    let lastCharacter = input[input.length - 1];
+    const lastCharacter = input[input.length - 1];
     // assign output
     if (output) {
       if (!isNaN(Number(lastCharacter))) {
@@ -54,7 +54,7 @@ const BasicCalculator = () => {
       result = evaluateExpression(expression);
       setOutput(result.toString());
     } catch (error) {
-      setInput("Error");
+      setInput(`Error: ${error}`);
     }
   };
 
